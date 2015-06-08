@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fiu_CaSPR.sajib.safebuk" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".userHome"
+            android:label="@string/title_activity_user_home"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".pendingFriends"
+            android:label=".pendingFriends"
+            android:parentActivityName=".userHome" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".userHome" />
+        </activity>
+        <activity
+            android:name=".NewTweet"
+            android:label="@string/title_activity_new_tweet"
+            android:parentActivityName=".userHome" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".userHome" />
+        </activity>
+        <activity
+            android:name=".fbHome"
+            android:label="@string/title_activity_fb_home"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+    </application>
+
+</manifest>
