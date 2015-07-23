@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/authorPicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher"
+        />
+
+    <TextView
+
+        android:layout_toRightOf="@+id/authorPicture"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/authorName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Author Name"
+        android:textSize="@dimen/abc_text_size_body_2_material"
+        />
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\@username"
+
+        android:layout_toRightOf="@+id/authorName"
+        android:layout_marginLeft="20dp"
+        />
+
+    <TextView
+        android:id="@+id/timeOfTwitt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:text="20min"/>
+
+    <TextView
+        android:id="@+id/tweetText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/authorPicture"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/authorName"
+        android:text="Dummy text"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    android:background="@drawable/b_bg"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.fiu_CaSPR.Frank.safebuk.userHome">
+
+    <TextView
+        android:id="@+id/appNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SecTwitter"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:weightSum="1"
+        android:id="@+id/userHome">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/userViewLabel"
+            android:layout_weight="0.16" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:layout_alignParentRight="true"
+            android:src="@android:drawable/sym_def_app_icon" />
+    </RelativeLayout>
+
+    <GridLayout
+        android:layout_width="227dp"
+        android:layout_height="154dp"
+        android:layout_gravity="center_horizontal"
+        android:rowCount="10"
+        android:columnCount="16"
+        android:id="@+id/gridLayout">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Friends"
+            android:id="@+id/button10"
+            android:layout_row="3"
+            android:layout_column="5" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tweet"
+            android:id="@+id/tweetButton"
+            android:onClick="newTweet"
+            android:layout_row="4"
+            android:layout_column="5" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Following"
+            android:id="@+id/followingButton"
+            android:onClick="showPending"
+            android:layout_row="4"
+            android:layout_column="10" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:id="@+id/button15"
+            android:layout_row="6"
+            android:layout_column="5" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Followers"
+            android:id="@+id/followersButton"
+            android:layout_row="3"
+            android:layout_column="10" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Tweets"
+            android:id="@+id/button12"
+            android:layout_row="6"
+            android:layout_column="10" />
+
+    </GridLayout>
+
+</LinearLayout>

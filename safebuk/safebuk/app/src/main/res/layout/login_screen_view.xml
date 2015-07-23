@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/usernameTV"
+        android:text="@string/usernameText"
+        android:layout_above="@+id/usernameInputField"
+        style="@style/loginTextViewsStyle"/>
+
+    <EditText
+        android:id="@+id/usernameInputField"
+        style="@style/loginAndRegisterETStyle"
+        android:layout_above="@+id/passwordTV"/>
+
+    <TextView
+        android:id="@+id/passwordTV"
+        style="@style/loginTextViewsStyle"
+        android:layout_centerInParent="true"
+        android:text="@string/passwordText"
+        />
+
+    <EditText
+        android:id="@+id/passwordInputField"
+        style="@style/loginAndRegisterETStyle"
+        android:layout_below="@+id/passwordTV"
+        />
+
+    <CheckBox
+        android:id="@+id/stayLoggedCB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordInputField"
+        android:layout_alignLeft="@+id/passwordInputField"/>
+
+    <TextView
+        android:id="@+id/stayLoggedTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stayLoggedText"
+        android:layout_toRightOf="@+id/stayLoggedCB"
+        android:layout_alignBaseline="@+id/stayLoggedCB"
+        />
+</RelativeLayout>
